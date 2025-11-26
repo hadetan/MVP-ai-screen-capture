@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Tauri App
+Exec=/usr/bin/tauri-app-launcher %U
+Icon=tauri-app
+Type=Application
+Categories=Utility;
+Terminal=false
+StartupNotify=true
