@@ -110,14 +110,14 @@ Phase 1 — CaptureManager module scaffold
 - [x] Add GStreamer initialization and error handling.
 
 Phase 2 — Video capture path
-- [ ] Implement a GStreamer pipeline builder function for Wayland portal capture using `pipewiresrc`. The pipeline outputs to `appsink` to receive buffers.
-- [ ] Implement appsink callback logic to push frames into a video chunk buffer.
-- [ ] Support selecting full display or a portal window (accepts a portal stream ID or let the portal select via prompt).
+- [x] Implement a GStreamer pipeline builder function for Wayland portal capture using `pipewiresrc`. The pipeline outputs to `appsink` to receive buffers.
+- [x] Implement appsink callback logic to push frames into a video chunk buffer.
+- [x] Support selecting full display or a portal window (accepts a portal stream ID or let the portal select via prompt).
 
 Phase 3 — Audio capture path
-- [ ] Implement a GStreamer audio pipeline that captures the system monitor (the monitor source for the active sink). Use `pulsesrc` or `pipewiresrc` depending on which is most reliable.
-- [ ] Implement appsink callback to push audio buffers into an audio chunk buffer.
-- [ ] Implement microphone capture path toggled on/off.
+- [x] Implement a GStreamer audio pipeline that captures the system monitor (the monitor source for the active sink). Use `pulsesrc` or `pipewiresrc` depending on which is most reliable.
+- [x] Implement appsink callback to push audio buffers into an audio chunk buffer.
+- [x] Implement microphone capture path toggled on/off.
 
 Phase 4 — Chunking & Consumer API
 - [ ] Implement chunking logic that accumulates audio and video for a configured chunk duration and emits an in-memory chunk (struct with metadata and raw bytes).
